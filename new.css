@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,12 +7,12 @@
     list-style: none;
 }
 
-body{
+body {
     color: rgb(5, 3, 0);
-     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%); 
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 
-header{
+header {
     position: fixed;
     top: 1rem;
     z-index: 100;
@@ -29,7 +29,7 @@ header{
     border-radius: 5rem;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
@@ -37,23 +37,23 @@ header{
     transition: 0.3s ease-in-out;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 2rem;
 }
 
-ul a{
+ul a {
     position: relative;
     transition: 0.3s ease-in-out;
     color: white;
     font-weight: 300;
 }
 
-ul a::before{
+ul a::before {
     position: absolute;
     content: '';
     width: 0;
@@ -63,83 +63,80 @@ ul a::before{
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
     background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-
 }
 
-ul a:hover::before{
+ul a:hover::before {
     width: 100%;
 }
 
-
-
-#menu-icon{
+#menu-icon {
     font-size: 2rem;
     display: none;
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 8rem 12%;
     width: 100%;
     position: relative;
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.home .home-container{
+.home .home-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
 }
 
-.home img{
+.home img {
     width: 30vw;
     border-radius: 50%;
 }
 
-.info-box{
+.info-box {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-left: 40px; 
+    margin-left: 40px;
 }
 
-.info-box h3{
+.info-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
     opacity: 0.8;
 }
 
-.info-box h1{
+.info-box h1 {
     font-size: 4rem;
     font-weight: 600;
 }
 
-.info-box span{
+.info-box span {
     background: linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
     background-clip: text;
     color: transparent;
     font-size: 2rem;
 }
 
-.about-info .new-span{
+.about-info .new-span {
     color: black;
 }
 
-.btn-grp{
+.btn-grp {
     display: flex;
     gap: 1rem;
 }
 
-.btn{
+.btn {
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
@@ -149,55 +146,54 @@ section{
     transition: 0.3s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: black;
     color: white;
 }
 
-.social{
+.social {
     display: flex;
     gap: 2rem;
 }
 
-.social i{
+.social i {
     font-size: 2.5rem;
     cursor: pointer;
     transition: 0.2s ease-out;
 }
 
-.social i:hover{
+.social i:hover {
     transform: scale(1.1);
 }
 
-.section-title{
+.section-title {
     text-align: center;
     font-weight: 600;
     font-size: 4rem;
     margin-bottom: 3rem;
 }
 
-.about-info{
+.about-info {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
 
-
-.about img{
+.about img {
     width: 24vw;
     border-radius: 3rem;
 }
 
-.grid{
+.grid {
     display: grid;
     gap: 2rem;
 }
 
-.grid-card{
+.grid-card {
     border: 2px solid black;
     border-radius: 3rem;
-    padding: 3rem;
+    padding: 3 rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -206,43 +202,43 @@ section{
     transition: ease-in-out;
 }
 
-.grid-card:hover{
+.grid-card:hover {
     transform: scale(1.02);
 }
 
-.grid-card i{
+.grid-card i {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.grid-card span{
+.grid-card span {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    background-image: linear-gradient(to right, #d03068 0%, #330867 100%); 
+    background-image: linear-gradient(to right, #d03068 0%, #330867 100%);
     background-clip: text;
     color: transparent;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: grey;
 }
 
-::-webkit-scrollbar-thumb{
-    background-image: linear-gradient(to right, #d03068 0%, #330867 100%); 
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #d03068 0%, #330867 100%);
 }
 
-.projects-grid{
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.project-card{
+.project-card {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -256,44 +252,37 @@ section{
     transition: ease-in-out;
 }
 
-
 a {
     color: black;
-    text-decoration: none; 
+    text-decoration: none;
     box-shadow: none;
-    border: none; 
-    background: transparent; 
-  }
-
-.project-card:hover{
-    a{
-        color: white;
-    }
+    border: none;
+    background: transparent;
 }
 
-.project-card:hover{
+.project-card:hover {
     background-color: black;
     color: white;
-    transform: translatey(-10px),scale(1.1);
+    transform: translateY(-10px) scale(1.1);
 }
 
-.project-card img{
+.project-card img {
     width: 20vw;
     border-radius: 1rem;
 }
 
-.project-card:hover .btn{
+.project-card:hover .btn {
     border: 2px solid white;
     color: white;
 }
 
-.project-card:hover .btn:hover{
+.project-card:hover .btn:hover {
     border: 2px solid white;
     background-color: white;
     color: black;
 }
 
-.project-card a:hover{
+.project-card a:hover {
     border: 2px solid white;
     background-color: white;
     color: black;
@@ -301,18 +290,18 @@ a {
     box-shadow: none;
 }
 
-.project-card h3{
+.project-card h3 {
     font-size: 2rem;
     font-weight: 500;
 }
 
-.education-grid{
+.education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.education-card{
+.education-card {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -324,12 +313,12 @@ a {
     border-radius: 3rem;
 }
 
-.education-card img{
+.education-card img {
     width: 20vw;
     border-radius: 1rem;
 }
 
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,29 +327,20 @@ a {
     margin-top: 5rem;
 }
 
-.input{
+.input {
     display: flex;
     flex-direction: column;
 }
 
-.input-box input{
+.input-box input {
     border-radius: 3rem;
     border: 2px solid black;
     padding: 2rem 8rem;
     font-size: 3rem;
 }
 
-
-.input{
+.input {
     position: relative;
-}
-
-.input i{
-    position: absolute;
-    font-size: 4rem;
-    top: 75%;
-    left: 10px;
-    transform: translate(50%, -50%);
 }
 
 .input-box input::placeholder {
@@ -368,7 +348,7 @@ a {
     color: gray;
 }
 
-footer{
+footer {
     bottom: 0;
     left: 0;
     height: 10rem;
@@ -380,30 +360,28 @@ footer{
     justify-content: center;
 }
 
-footer ul{
+footer ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
 }
 
-footer ul a{
+footer ul a {
     color: black;
     font-weight: 600;
     font-size: 1.3rem;
 }
 
-.email{
+.email {
     font-size: 1rem;
     font-weight: 600;
 }
 
-.copyright{
+.copyright {
     font-size: 300;
     margin-top: 2rem;
 }
-
-
 
 @media screen and (max-width: 1280px) {
     header {
@@ -421,7 +399,7 @@ footer ul a{
         padding: 1rem 2rem;
     }
     header .logo {
-        font-size: 1rem;
+ font-size: 1rem;
     }
     .input-box input {
         padding: 1rem 2.5rem;
@@ -459,44 +437,66 @@ footer ul a{
         font-size: 0.9rem; /* Smaller size for small screens */
     }
 
-    @media screen and (max-width: 400px) {
-        header {
-            flex-direction: column; /* Stack elements vertically */
-            padding: 1rem; /* Reduce padding */
-        }
-    
-        .nav-links {
-            flex-direction: column; /* Stack navigation links */
-            width: 100%; /* Full width */
-            padding: 0; /* Remove extra padding */
-        }
-    
-        .nav-links.active {
-            display: flex; /* Show nav links when active */
-        }
-    
-        .home img {
-            width: 80vw; /* Adjust image width */
-        }
-    
-        .info-box h1 {
-            font-size: 2rem; /* Reduce heading size */
-        }
-    
-        .btn {
-            padding: 0.5rem 1rem; /* Reduce button size */
-            font-size: 1rem; /* Adjust font size */
-        }
-    
-        .input-box input {
-            padding: 1rem; /* Adjust input padding */
-            font-size: 1rem; /* Adjust input font size */
-        }
-    
-        footer ul {
-            flex-direction: column; /* Stack footer links */
-            align-items: center; /* Center items */
-        }
+    .home img {
+        width: 80vw; /* Adjust image width */
     }
-    
+
+    .info-box h1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Reduce button size */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .input-box input {
+        padding: 1rem; /* Adjust input padding */
+        font-size: 1rem; /* Adjust input font size */
+    }
+
+    footer ul {
+        flex-direction: column; /* Stack footer links */
+        align-items: center; /* Center items */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        width: 100%; /* Full width */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+
+    .home img {
+        width: 80vw; /* Adjust image width */
+    }
+
+    .info-box h1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Reduce button size */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .input-box input {
+        padding: 1rem; /* Adjust input padding */
+        font-size: 1rem; /* Adjust input font size */
+    }
+
+    footer ul {
+        flex-direction: column; /* Stack footer links */
+        align-items: center; /* Center items */
+    }
 }
