@@ -443,12 +443,11 @@ footer ul a{
         width: 100%;
         padding: 1rem;
         color: white;
-        display: flex; /* Ensure it can be toggled */
+        display: none; /* Initially hidden */
         flex-direction: column;
         text-align: center;
         background-color: black;
         border-radius: 3rem;
-        display: none; /* Initially hidden */
     }
 
     .nav-links.active {
@@ -480,6 +479,77 @@ footer ul a{
     footer ul {
         flex-direction: column; /* Stack footer links */
         align-items: center; /* Center items */
+    }
+
+    .home {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 2rem 1rem; /* Adjust padding */
+    }
+
+    .home .home-container {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 2rem; /* Adjust gap */
+    }
+
+    .home img {
+        width: 60vw; /* Adjust image width */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+
+    .info-box {
+        text-align: center; /* Center text */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .info-box h1 {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    .info-box h3 {
+        font-size: 1.5rem; /* Adjust subheading size */
+    }
+
+    .info-box span {
+        font-size: 1.5rem; /* Adjust span size */
+    }
+
+    .about-info {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+        gap: 2rem; /* Add space between items */
+    }
+
+    .about img {
+        width: 80vw; /* Adjust image width for mobile */
+        margin: 0; /* Remove margin */
+    }
+
+    .grid {
+        flex-direction: column; /* Stack grid items vertically */
+        gap: 2rem; /* Add space between grid items */
+    }
+
+    .grid-card {
+        width: 100%; /* Make grid cards full width */
+        padding: 2rem; /* Adjust padding */
+    }
+
+    footer {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center items */
+        padding: 1rem; /* Add padding for spacing */
+    }
+
+    footer ul {
+        flex-direction: column; /* Stack footer links */
+        align-items: center; /* Center items */
+        gap: 1rem; /* Add space between links */
+    }
+
+    footer .email,
+    footer .copyright {
+        text-align: center; /* Center text */
+        margin: 0.5rem 0; /* Add margin for spacing */
     }
 }
 
@@ -515,6 +585,73 @@ footer ul a{
     .input-box input {
         padding: 1rem; /* Adjust input padding */
         font-size: 1rem; /* Adjust input font size */
+    }
+
+    footer ul {
+        flex-direction: column; /* Stack footer links */
+        align-items: center; /* Center items */
+    }
+}
+
+/* Navbar styles */
+#menu-icon {
+    display: none; /* Hide by default */
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links.active {
+    display: flex; /* Show when active */
+}
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        border-radius: 3rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+}
+
+/* Other responsive styles */
+@media screen and (max-width: 600px) {
+    .home img {
+        width: 50vw; /* Smaller image size */
+    }
+
+    .info-box h1 {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    .info-box h3 {
+        font-size: 1.5rem; /* Adjust subheading size */
+    }
+
+    .info-box span {
+        font-size: 1.5rem; /* Adjust span size */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Adjust button size */
+        font-size: 1rem; /* Adjust font size */
     }
 
     footer ul {
