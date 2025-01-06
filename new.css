@@ -70,23 +70,7 @@ ul a:hover::before{
     width: 100%;
 }
 
-.visit-btn{
-    padding: 0.8rem 1rem;
-    border-radius: 3rem;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
-    cursor: pointer;
-    text-wrap: nowrap;
-    transition: 0.3s ease-in-out;
-    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-}
 
-.visit-btn:hover{
-    transform: scale(1.1);
-    background: linear-gradient(to right, #330867 0%, #30cfd0 100%);
-}
 
 #menu-icon{
     font-size: 2rem;
@@ -146,6 +130,10 @@ section{
     font-size: 2rem;
 }
 
+.about-info .new-span{
+    color: black;
+}
+
 .btn-grp{
     display: flex;
     gap: 1rem;
@@ -194,6 +182,7 @@ section{
     justify-content: center;
     gap: 5rem;
 }
+
 
 .about img{
     width: 24vw;
@@ -414,73 +403,37 @@ footer ul a{
     margin-top: 2rem;
 }
 
-@media screen and (max-width:1280px){
-    header{
+
+
+@media screen and (max-width: 1280px) {
+    header {
         padding: 1rem 2rem;
         gap: 2rem;
     }
-
-    .home .home-container{
+    .home .home-container {
         gap: 3rem;
-    }
-
-    .about-info{
-        flex-direction: column;
-    }
-
-    .input-box input{
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
-    }
-
-    .input-box i{
-        font-size: 2.5rem;
     }
 }
 
-@media screen and (max-width:768px){
-    header{
+@media screen and (max-width: 768px) {
+    header {
         gap: 1rem;
         padding: 1rem 2rem;
     }
-    
-    header .logo{
+    header .logo {
         font-size: 1rem;
     }
-
-    header .visit-btn{
-        display: none;
-
-    }
-
-    .input-box input{
+    .input-box input {
         padding: 1rem 2.5rem;
         font-size: 1.8rem;
     }
-
-    .input-box i{
-        display: none;
-    }
-
-    .input-box input::placeholder {
-        font-size: 1rem; /* Adjusted size for medium screens */
-    }
-
-    .grid{
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    .about-info img{
-        width: 70vw;
-    }
 }
 
-@media screen and (max-width:600px){
-    header #menu-icon{
-        display: block;
-
+@media screen and (max-width: 600px) {
+    #menu-icon {
+        display: block; /* Show menu icon on small screens */
     }
-
+    
     .nav-links {
         position: absolute;
         top: 100%;
@@ -490,19 +443,60 @@ footer ul a{
         width: 100%;
         padding: 1rem;
         color: white;
-        display: flex;
+        display: flex; /* Ensure it can be toggled */
         flex-direction: column;
         text-align: center;
         background-color: black;
         border-radius: 3rem;
-        display: none;
+        display: none; /* Initially hidden */
     }
 
-    .nav-links.active{
-        display: flex;
+    .nav-links.active {
+        display: flex; /* Show when active */
     }
 
     .input-box input::placeholder {
         font-size: 0.9rem; /* Smaller size for small screens */
     }
+
+    @media screen and (max-width: 400px) {
+        header {
+            flex-direction: column; /* Stack elements vertically */
+            padding: 1rem; /* Reduce padding */
+        }
+    
+        .nav-links {
+            flex-direction: column; /* Stack navigation links */
+            width: 100%; /* Full width */
+            padding: 0; /* Remove extra padding */
+        }
+    
+        .nav-links.active {
+            display: flex; /* Show nav links when active */
+        }
+    
+        .home img {
+            width: 80vw; /* Adjust image width */
+        }
+    
+        .info-box h1 {
+            font-size: 2rem; /* Reduce heading size */
+        }
+    
+        .btn {
+            padding: 0.5rem 1rem; /* Reduce button size */
+            font-size: 1rem; /* Adjust font size */
+        }
+    
+        .input-box input {
+            padding: 1rem; /* Adjust input padding */
+            font-size: 1rem; /* Adjust input font size */
+        }
+    
+        footer ul {
+            flex-direction: column; /* Stack footer links */
+            align-items: center; /* Center items */
+        }
+    }
+    
 }
