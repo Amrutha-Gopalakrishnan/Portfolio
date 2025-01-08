@@ -9,7 +9,7 @@
 
 body{
     color: rgb(5, 3, 0);
-     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%); 
+    background-color: white;
 }
 
 header{
@@ -124,7 +124,7 @@ section{
 }
 
 .info-box span{
-    background: linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%); 
     background-clip: text;
     color: transparent;
     font-size: 2rem;
