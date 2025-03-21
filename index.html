@@ -9,7 +9,7 @@
 </head>
 <body>
    <header class="head">
-        <a href="#" class="logo"><span>Amrutha KG</span></a>
+        <a href="#" class="logo"><span>Amrutha</span></a>
             <ul class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -26,20 +26,19 @@
     <div class="home-contanier">
         <img class="circle" src="WhatsApp Image 2024-12-23 at 12.20.58_be2c4a41.jpg"></div>
     
+                   
 
         <div class="info-box">
             <div class="text">
                 <h3>Hii, I'm</h3>
-                <h1>Amrutha KG</h1>
+                <h1>Amrutha</h1>
                 <span>Frontend Developer</span>
             </div>
 
-            <div class="btn-grp">
-                <div class="btn">Contact</div>
-            </div>
-    
             <div class="social">
-                <i class="fa-brands fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/amrutha-gopalakrishnan-91b85b315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
             </div>
         </div>
         
@@ -131,6 +130,7 @@
                 
             </div>
         </div>
+
     </div>
    </section>
 
@@ -158,21 +158,39 @@
    </section>
 
 
+   
+
    <section class="contact" id="contact">
-    <div class="input-box">
+    <div class="contact-container">
         <h2 class="section-title">Contact</h2>
-
-        <div class="input">
-            <input type="text" placeholder="Your Name">
-            <br>
-            <input type="email" placeholder="Your Email">
-        </div>
-
-        <div class="btn">
-            Submit
-        </div>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Correct access_key input -->
+            <input type="hidden" name="access_key" value="93f08afe-079b-4a20-b6be-2726b81e72b9">
+        
+            <div class="input-group">
+                <label for="name">Your Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>  
+        
+            <div class="input-group">
+                <label for="email">Your Email</label>
+                <input class="input" type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        
+            <div class="input-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+        
+            <!-- Bot check (hidden field for spam protection) -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <button type="submit" class="btn" style="color: black;">Send Message</button>
+        </form>
+        
     </div>
-   </section>
+</section>
+
 
    
    <footer>
